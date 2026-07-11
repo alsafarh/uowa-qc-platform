@@ -1,0 +1,13 @@
+.dash-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.dash-grid-3 { display: grid; grid-template-columns: 1fr 2fr; gap: 1rem; }
+.cat-scores { display: flex; flex-direction: column; gap: .65rem; }
+.cat-row    { display: flex; flex-direction: column; gap: .25rem; }
+.cat-name   { font-size: .8rem; font-weight: 500; }
+.cat-bar-wrap { display: flex; align-items: center; gap: .6rem; }
+.cat-val    { font-size: .8rem; font-weight: 700; min-width: 36px; text-align: left; }
+
+@media (max-width: 900px) {
+    .dash-grid-2 { grid-template-columns: 1fr; }
+    .dash-grid-3 { grid-template-columns: 1fr; }
+    .dash-grid-3 .card[style*="span 2"] { grid-column: span 1; }
+}
